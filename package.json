@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "os_x_fan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/nodemon index.js",
+    "startDeployed": "nohup ./node_modules/.bin/nodemon index.js >> /Volumes/disk120/logs/os_x_fan.log &",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "nodemon": "^2.0.7",
+    "osx-temperature-sensor": "^1.0.7"
+  }
+}
